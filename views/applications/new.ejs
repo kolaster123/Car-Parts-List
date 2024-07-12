@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a New App</title>
+</head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Add a New App</h1>
+    <form action="" method="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        
+        <label for="Link">Link:</label>
+        <input type="text" name="Link" id="Link">
+        
+        <label for="Price">Price:</label>
+        <textarea name="Price" id="Price"></textarea>
+        
+        <label for="Status">Status:</label>
+        <select id="status" name="status">
+          <option value="interested">Got it!</option>
+          <option value="applied">Dont got it!</option>
+          <option value="interviewing">Saving up!</option>
+        </select>
+        <button type="submit">Add Application</button>
+      </form>
+  </body>
+</html>
