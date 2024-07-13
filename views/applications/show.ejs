@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= application.title %></title>
+</head>
+<body>
+  <%- include('../partials/_navbar.ejs') %>
+  <h1><%= application.name %></h1>
+  <% if (application.link) { %>
+    <a href="<%= application.link %>">View car part</a>
+  <% } %>
+  <h1>$<%= application.price %></h1>
+  <p>Current Status: <%= application.status %></p>
+  <form
+    action="/users/<%= user._id %>/applications/<%= application._id %>?_method=DELETE"
+    method="POST">
+    <button type="submit">Delete this application</button>
+</body>
+</html>

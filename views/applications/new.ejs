@@ -8,21 +8,21 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Add a New App</h1>
-    <form action="" method="">
+    <form action="/users/<%= user._id %>/applications" method="POST">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name">
         
-        <label for="Link">Link:</label>
-        <input type="text" name="Link" id="Link">
+        <label for="link">Link:</label>
+        <input type="text" name="link" id="link">
         
-        <label for="Price">Price:</label>
-        <textarea name="Price" id="Price"></textarea>
+        <label for="price">Price:</label>
+        <textarea name="price" id="price"></textarea>
         
-        <label for="Status">Status:</label>
+        <label for="status">Status:</label>
         <select id="status" name="status">
-          <option value="interested">Got it!</option>
-          <option value="applied">Dont got it!</option>
-          <option value="interviewing">Saving up!</option>
+          <option value="got it">Got it!</option>
+          <option value="dont got it">Dont got it!</option>
+          <option value="saving up">Saving up!</option>
         </select>
         <button type="submit">Add Application</button>
       </form>
