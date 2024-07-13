@@ -13,9 +13,12 @@
   <% } %>
   <h1>$<%= application.price %></h1>
   <p>Current Status: <%= application.status %></p>
+  <a href="/users/<%= user._id %>/applications/<%= application._id %>/edit">
+    Edit this Part
+  </a>
   <form
     action="/users/<%= user._id %>/applications/<%= application._id %>?_method=DELETE"
     method="POST">
-    <button type="submit">Delete this application</button>
+    <button type="submit">Delete this Part</button>
 </body>
 </html>
