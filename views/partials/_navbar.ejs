@@ -1,9 +1,20 @@
 <nav>
-  <% if(user) { %>
-    <a href="/users/<%=user._id%>/applications">Your Apps</a>
-    <a href="/auth/sign-out">Sign Out</a>
-  <% } else { %>
-    <a href="/auth/sign-in">Sign In</a>
-    <a href="/auth/sign-up">Sign Up</a>
-  <% } %>
-</nav>
+    <link rel="stylesheet" href="/stylesheet/partials.css" />
+    <% if(user) { %>
+      <div class="navbar">
+        <h1 id="nav-header">Dream Car List</h1>
+        <div class="nav-links">
+          <a class="authlink" href="/users/<%=user._id%>/applications">Your Parts</a>
+          <a class="authlink" href="/auth/sign-out">Sign Out</a>
+        </div>
+      </div>
+      <% } else { %>
+        <div class="navbar">
+          <h1 id="nav-header">Car Parts</h1>
+          <div class="nav-links">
+            <a class="authlink" href="/auth/sign-in">Sign In</a>
+            <a  class="authlink"href="/auth/sign-up">Sign Up</a>
+          </div>
+        </div>
+        <% } %>
+  </nav>

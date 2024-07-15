@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheet/style.css" />
   <title>Car Parts</title>
+  <%- include('./partials/_navbar.ejs') %>
 </head>
 <body>
-   <%- include('./partials/_navbar.ejs') %> 
-  <% if (user) { %>
-    <h1>Welcome to the app, <%= user.username %>!</h1>
-    <p>
-      <a href="/auth/sign-out">Sign out</a>
-    </p>
-  <% } else { %>
-    <h1>Welcome to the app, guest.</h1>
-    <p>
-      <a href="/auth/sign-up">Sign up</a> or
-      <a href="/auth/sign-in">Sign in</a>.
-    </p>
-  <% } %>
+  <div class="index-body">
+    <h1>Welcome to the Dream Car Build</h1>
+    <div class="index-container">
+      <div class="auth-links">
+        <a href="/auth/sign-up" class="signup-link">Sign Up</a>
+        <a href="/auth/sign-in" class="signin-link">Sign In</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

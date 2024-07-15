@@ -3,28 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add a New App</title>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+  <title>Add New Part</title>
+  <%- include('../partials/_navbar.ejs') %>
 </head>
-  <body>
-    <%- include('../partials/_navbar.ejs') %>
-    <h1>Add a New App</h1>
+<body>
+  <div class="background2">
+  <div class="new-body">
+    <h1>Add a New Car Part</h1>
     <form action="/users/<%= user._id %>/applications" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-        
-        <label for="link">Link:</label>
-        <input type="text" name="link" id="link">
-        
-        <label for="price">Price:</label>
-        <textarea name="price" id="price"></textarea>
-        
-        <label for="status">Status:</label>
-        <select id="status" name="status">
-          <option value="got it">Got it!</option>
-          <option value="dont got it">Dont got it!</option>
-          <option value="saving up">Saving up!</option>
-        </select>
-        <button type="submit">Add Application</button>
-      </form>
-  </body>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+      
+      <label for="link">Link:</label>
+      <input type="text" name="link" id="link">
+      
+      <label for="price">Price:</label>
+      <textarea name="price" id="price"></textarea>
+      
+      <label for="status">Status:</label>
+      <select id="status" name="status">
+        <option value="got it">Got it!</option>
+        <option value="dont got it">Don't got it!</option>
+        <option value="saving up">Saving up!</option>
+      </select>
+      <button type="submit">Add Application</button>
+    </form>
+  </div>
+</div>
+</body>
 </html>
