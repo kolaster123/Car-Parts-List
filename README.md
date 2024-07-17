@@ -4,7 +4,7 @@
 ## I made this app because I love modifying cars and noticed that there wasnt a one site that was able to track all the parts that I would want to get. So I made a website that would let you add you rpart determine if you got it or not and if your saving up towards it. This makes it easier to know what to get and complete your dream build.
 [link to trello board](https://trello.com/b/oYe5zF8w/crud-app-pproject) 
 
-[Link to website]([https://kolaster123.github.io/Car-Parts-List/](https://car-parts-list-7760a30cbeff.herokuapp.com/))
+[Link to website](https://car-parts-list-7760a30cbeff.herokuapp.com/)
 
 ## Technologies Used
 * Javascript
